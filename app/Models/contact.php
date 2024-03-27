@@ -16,10 +16,10 @@ class Contact extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'Nama_Depan',
-        'Nama_Belakang',
-        'Email',
-        'Nomer_Hp'
+        'first_name',
+        'last_name',
+        'email',
+        'phone'
     ];
 
     public function user(): BelongsTo

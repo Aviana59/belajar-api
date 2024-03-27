@@ -17,11 +17,11 @@ class AddressSeeder extends Seeder
         $contact = Contact::query()->limit(1)->first();
         Address::create([
             'contact_id' => $contact->id,
-            'Jalan' => 'test',
-            'Kota' => 'test',
-            'Provinsi' => 'test',
-            'Kota' => 'test',
-            'Kode_Pos' => '11111'
+            'street' => 'test',
+            'city' => 'test',
+            'province' => 'test',
+            'country' => 'test',
+            'postal_code' => '11111'
         ]);
     }
 }

@@ -16,10 +16,10 @@ class ContactSeeder extends Seeder
     {
         $user = User::where('username', 'test')->first();
         Contact::create([
-            'Nama_Depan' => 'test',
-            'Nama_Belakang' => 'test',
-            'Email' => 'test@gmail.com',
-            'Nomor_Hp' => '111111',
+            'first_name' => 'test',
+            'last_name' => 'test',
+            'email' => 'test@pzn.com',
+            'phone' => '111111',
             'user_id' => $user->id
         ]);
     }

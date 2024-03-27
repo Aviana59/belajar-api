@@ -15,11 +15,11 @@ class Address extends Model
     public $timestamps = true;
 
     protected $fillable = [
-        'Jalan',
-        'Kota',
-        'Provinsi',
-        'Negara',
-        'Kode_Pos'
+        'street',
+        'city',
+        'province',
+        'country',
+        'postal_code'
     ];
 
     public function contact(): BelongsTo
